@@ -41,6 +41,8 @@ img {
 .header-container {
   display: flex;
   align-items: center;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-logo {
   font-family: 'Raleway', sans-serif;
@@ -85,6 +87,7 @@ img {
   color: #2e2f42;
   padding-top: 24px;
   padding-bottom: 24px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-list-item:hover {
   color: #404bbf;
@@ -93,11 +96,15 @@ img {
   color: #404bbf;
   text-decoration: underline;
 }
+.current {
+  color: #404bbf;
+}
 .current::after {
   content: '';
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
+  border-radius: 2px;
   width: 100%;
   height: 4px;
   background-color: #404bbf;
@@ -122,6 +129,7 @@ img {
   color: #434455;
   padding-top: 24px;
   padding-bottom: 24px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-address-list-item:hover {
   color: #404bbf;
@@ -211,6 +219,7 @@ h1 {
   width: 264px;
   height: 112px;
   margin-bottom: 8px;
+  background-color: #f4f4fd;
 }
 .features-list-item-heading {
   margin-bottom: 8px;
