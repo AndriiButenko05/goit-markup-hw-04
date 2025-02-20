@@ -284,6 +284,7 @@ h1 {
 }
 .job {
   text-align: center;
+  margin-bottom: 8px;
 }
 .team-list-text {
   font-weight: 400;
@@ -305,7 +306,6 @@ h1 {
 .team-list-svg-item {
   width: 40px;
   height: 40px;
-  margin-bottom: 32px;
 }
 .team-list-svg-link {
   width: 100%;
@@ -321,7 +321,7 @@ h1 {
   background-color: #404bbf;
 }
 .icon-svg-team {
-  fill: #fff;
+  fill: #f4f4fd;
 }
 
 /* Portfolio */
